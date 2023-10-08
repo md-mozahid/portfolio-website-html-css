@@ -1,0 +1,41 @@
+.features-section {
+  .content {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+      .feature {
+        background-color: $color-bg-body;
+        box-shadow: $shadow-white-3;
+        padding: 30px;
+        border-radius: 7px;
+
+        i {
+          color: $color-primary-red;
+          font-size: 25px;
+          margin-top: 30px;
+          &:hover {
+            color: $color-white;
+          }
+        }
+        h4 {
+          margin-top: 20px;
+          margin-bottom: 25px;
+          font-size: $font-size-3;
+          font-weight: 400;
+          color: $color-primary;
+        }
+        p {
+          font-size: $font-size-2;
+          width: 90%;
+        }
+        &:hover {
+          background-color: $color-hover;
+          color: $color-white;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.pricing-section {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pricing-area {
+      margin-left: 75px;
+      box-shadow: $shadow-white-3;
+      width: 60%;
+      .type {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .pricing-desc {
+        // margin-bottom: 50px;
+        padding: 50px;
+        .price-pack {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 50px;
+          h4 {
+            font-size: $font-size-5;
+          }
+          span {
+            color: $color-primary-red;
+            font-size: $font-size-5;
+            font-weight: 600;
+          }
+        }
+        p {
+          font-size: $font-size-2;
+          padding: 0 50px;
+          width: 70%;
+          margin-bottom: 30px;
+        }
+      }
+      .pack-include {
+        margin-bottom: 50px;
+        .pack-service {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding: 0 50px;
+          .pack-item {
+            margin-bottom: 10px;
+            i {
+              color: $color-primary-red;
+              margin-right: 5px;
+            }
+            span {
+              color: $color-default;
+            }
+          }
+        }
+      }
+    }
+  }
+}

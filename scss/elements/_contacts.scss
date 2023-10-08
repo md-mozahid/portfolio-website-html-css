@@ -1,0 +1,46 @@
+.contact-section {
+  .contact-area {
+    display: flex;
+    column-gap: 50px;
+    margin-top: 50px;
+    .relationship {
+      width: 40%;
+      box-shadow: $shadow-white-3;
+      padding: 25px;
+      img {
+        width: 100%;
+        border-radius: 6px;
+      }
+      h4 {
+        font-size: $font-size-5;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: $color-primary;
+        font-weight: 500;
+      }
+      span {
+        color: $color-default;
+      }
+      p {
+        margin: 15px 0;
+      }
+    }
+    .form-area {
+      width: 60%;
+      box-shadow: $shadow-white-3;
+      padding: 25px;
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        .input1 {
+          display: flex;
+          column-gap: 10px;
+        }
+        button {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}

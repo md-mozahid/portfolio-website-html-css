@@ -1,0 +1,44 @@
+.portfolio-section {
+  .content {
+    .portfolios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .portfolio {
+        background-color: $color-bg-body;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: $shadow-white-3;
+        img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+        .designation {
+          display: flex;
+          justify-content: space-between;
+          h5 {
+            color: $color-primary-red;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+          :last-child {
+            color: $color-primary;
+          }
+        }
+        h4 {
+          color: $color-primary;
+          font-size: $font-size-3;
+          font-weight: 600;
+        }
+        &:hover {
+          img {
+            scale: 105%;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
